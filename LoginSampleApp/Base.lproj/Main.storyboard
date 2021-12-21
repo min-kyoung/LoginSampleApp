@@ -230,8 +230,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bma-6K-kiw">
-                                <rect key="frame" x="179" y="491" width="63" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bma-6K-kiw">
+                                <rect key="frame" x="175.5" y="538" width="63" height="34"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="로그아웃">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -240,17 +240,29 @@
                                     <action selector="btnLogoutTapped:" destination="Z18-yY-sty" eventType="touchUpInside" id="1ux-GR-pjZ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kK-8d-qnX">
+                                <rect key="frame" x="166" y="488" width="82" height="30"/>
+                                <state key="normal" title="비밀번호 변경">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPasswordReset:" destination="Z18-yY-sty" eventType="touchUpInside" id="v2n-uv-G50"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ujv-rR-FBJ"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="bma-6K-kiw" firstAttribute="top" secondItem="7kK-8d-qnX" secondAttribute="bottom" constant="20" id="LF5-QU-4Xm"/>
+                            <constraint firstItem="7kK-8d-qnX" firstAttribute="top" secondItem="uMn-fo-IAU" secondAttribute="bottom" constant="20" id="SkW-n8-PrP"/>
                             <constraint firstItem="uMn-fo-IAU" firstAttribute="centerY" secondItem="Ujv-rR-FBJ" secondAttribute="centerY" id="bfm-K9-V1k"/>
+                            <constraint firstItem="7kK-8d-qnX" firstAttribute="centerX" secondItem="Ujv-rR-FBJ" secondAttribute="centerX" id="dHW-M4-Vt6"/>
                             <constraint firstItem="uMn-fo-IAU" firstAttribute="centerX" secondItem="Ujv-rR-FBJ" secondAttribute="centerX" id="g5F-Kg-1f3"/>
                             <constraint firstItem="bma-6K-kiw" firstAttribute="centerX" secondItem="Ujv-rR-FBJ" secondAttribute="centerX" id="kSX-5F-brX"/>
-                            <constraint firstItem="bma-6K-kiw" firstAttribute="top" secondItem="uMn-fo-IAU" secondAttribute="bottom" constant="20" id="oCo-7d-Uyu"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnPasswordReset" destination="7kK-8d-qnX" id="76m-8V-ZtN"/>
                         <outlet property="lblWelcome" destination="uMn-fo-IAU" id="ZZk-ft-SBz"/>
                     </connections>
                 </viewController>
