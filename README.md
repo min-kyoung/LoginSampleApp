@@ -9,10 +9,10 @@ Firebase Authentication를 이용하여 로그인 기능을 구현하는 프로�
      이 때, iOS의 번들 ID에는 Xcode 프로젝트 파일의 Bundle Identifier를 입력한다.
   3. GoogleService-info.plist를 다운받아 Xcode 프로젝트 파일에 추가한다.
 * Firebase Authentication 탭에서 세 가지 로그인 방식을 활성화 한다.<br>
-  <img src="https://user-images.githubusercontent.com/62936197/149752867-a86f49b8-ef46-4697-82b2-1c02975f4ebf.png" width="550" height="200">
+  <img src="https://user-images.githubusercontent.com/62936197/149752867-a86f49b8-ef46-4697-82b2-1c02975f4ebf.png" width="550" height="200"> <br>
 * Firebase SDK를 CocoaPods를 이용하여 설치한다.
   1. 터미널에서 해당 프로젝트 경로로 이동한 후 **pod init**을 입력하여 Podfile을 생성한다. <br>
-      <img src="https://user-images.githubusercontent.com/62936197/149737343-f41e8605-103f-41be-b461-55245e5ff0a1.png" width="250" height="150"> 
+      <img src="https://user-images.githubusercontent.com/62936197/149737343-f41e8605-103f-41be-b461-55245e5ff0a1.png" width="250" height="150"> <br>
   2. Podfile을 열어서 **# Pods for LoginSampleApp** 아래에 두 가지를 추가한 후 저장한다.
       ```swift
        pod 'Firebase/Auth'
@@ -20,12 +20,12 @@ Firebase Authentication를 이용하여 로그인 기능을 구현하는 프로�
       ```
      
   3. 터미널로 돌아와 **pod install**을 입력하여 SDK를 설치한다.
-      <img src="https://user-images.githubusercontent.com/62936197/149737760-0988b7c6-bdc9-46c2-9787-a0f2b2f6e001.png" width="550" height="160">
+      <img src="https://user-images.githubusercontent.com/62936197/149737760-0988b7c6-bdc9-46c2-9787-a0f2b2f6e001.png" width="550" height="160"> <br>
   4. pod을 추가한 후에는 xcworkspace 파일을 이용해서 개발을 진행한다.
  * 구글 계정 로그인을 사용하기 위해서 맞춤 URL 스키마를 구성한다.
     1. XCode 프로젝트에서 **TARGETS > Info**를 선택한 후 URL Types를 추가한다.
     2. URL Scheme에 GoogleService-info.plist의 REVERSED_CLIENT_ID를 입력한다.<br>
-        <img src="https://user-images.githubusercontent.com/62936197/149761145-efaa99ba-5e04-4ba8-a794-b9ff5ff8eca5.png" width="550" height="160">
+        <img src="https://user-images.githubusercontent.com/62936197/149761145-efaa99ba-5e04-4ba8-a794-b9ff5ff8eca5.png" width="550" height="160"> <br>
       
  * 애플 계정 로그인을 사용하기 위해서는 Apple Developer 가입을 전제로 한다.
     1. XCode 프로젝트에서 **TARGETS > Signing & Capabilities**를 선택한 후 Capability 추가에서 **Sign in with Apple**을 선택한다. <br>
