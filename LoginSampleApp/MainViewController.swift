@@ -64,7 +64,7 @@ class MainViewController: UIViewController {
         changeRequest?.commitChanges { _ in
             let displayName = Auth.auth().currentUser?.displayName ?? Auth.auth().currentUser?.email ?? "고객"
             
-            self.lblWelcome.text == """
+            self.lblWelcome.text = """
                 환영합니다.
                 \(displayName)님
                 """
