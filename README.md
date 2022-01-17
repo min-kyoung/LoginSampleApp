@@ -11,7 +11,7 @@ Firebase Authentication를 이용하여 로그인 기능을 구현하는 프로�
 * Firebase Authentication 탭에서 세 가지 로그인 방식을 활성화 한다.<br>
   <img src="https://user-images.githubusercontent.com/62936197/149752867-a86f49b8-ef46-4697-82b2-1c02975f4ebf.png" width="550" height="200">
 * Firebase SDK를 CocoaPods를 이용하여 설치한다.
-  1. 터미널에서 해당 프로젝트 경로로 이동한 후 **pod init**을 입력하여 Podfile을 생성한다.<br>
+  1. 터미널에서 해당 프로젝트 경로로 이동한 후 **pod init**을 입력하여 Podfile을 생성한다. <br>
       <img src="https://user-images.githubusercontent.com/62936197/149737343-f41e8605-103f-41be-b461-55245e5ff0a1.png" width="250" height="150"> 
   2. Podfile을 열어서 **# Pods for LoginSampleApp** 아래에 두 가지를 추가한 후 저장한다.
       ```swift
